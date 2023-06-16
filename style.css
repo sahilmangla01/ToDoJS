@@ -1,0 +1,203 @@
+body{
+    background-color: black;
+}
+.mainContainer{
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    
+
+}
+h1{
+    font-size: 50px;
+    
+}
+header{
+    padding: 40px;    
+}
+.head2Text{
+    font-size: 40px;
+
+}
+.head2{
+    display: none;
+    margin-bottom: 100px;
+}
+.display{
+    display: flex;
+    justify-content: space-around;
+}
+.addBtn{
+    padding: 25px;
+}
+.btn1{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #11009E;
+    background-color: #11009E;
+    border-radius: 50%;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.backBtn{
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.checkItem{
+    font-size: 25px;
+    font-weight: bolder;
+    position: relative;
+    left: 320px;
+    margin-top: 40px;
+}
+.adt{
+    color: orangered;
+    font-size: x-large;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+input{
+    width: 300px;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid orangered;
+    border-radius:4px ;
+    box-shadow: 1px 1px 4px 2px gray;
+}
+.addTask{
+    display: none;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid orangered;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    text-align: center;
+    position: fixed;
+    top: 30vh;
+    left: 40vw;
+    z-index: 1;
+}
+.btn2{
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: orangered;
+    color: white;
+    font-size: large;
+    border: 2px solid orangered;
+    border-radius: 10px;
+    padding: 10px ;
+    box-sizing: border-box;
+}
+.blur{
+    filter: blur(20px);
+}
+.todos{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    left: 280px;
+   background-color: black;
+}
+.todoscard{
+    width: 220px;
+    height: 350px;
+    background-color: #FFF4F4;
+    color: #EA906C;
+    font-size: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    border:1px solid orangered;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    
+}
+.addCardBtn1{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid #EA906C;
+    background-color: #EA906C;
+    color: white;
+    font-size: 28px;
+    font-weight: bolder;
+    position: relative;
+    top: 210px;
+    left: 55px;
+    z-index: 1;
+}
+.line{
+    border-bottom: 2px solid grey;
+    padding-bottom: 20px;
+    margin: 20px 0px;
+    font-size: 20px;
+}
+.addCardBtn2{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid #068DA9;
+    background-color: #068DA9;
+    color: white;
+    font-size: 28px;
+    font-weight: bolder;
+    position: relative;
+    top: 210px;
+    left: 60px;
+    z-index: 1;
+    
+}
+
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    height: 200px;
+    overflow-y: auto ;
+    overflow-x: hidden;
+    
+    
+}
+.itemDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   margin-left: 20px;
+   margin-bottom: 10px;
+    
+}
+.itemText{
+    color: black;
+    font-size: 20px;
+    width: 80px;
+    margin-right: 2px;
+    margin-top: 4px;
+    text-align: left;
+
+}
+.itemButton{
+    background-color: #11009E;
+    border: 2px solid white;
+    color: #FFF4F4;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+   margin-right: 20px;
+}

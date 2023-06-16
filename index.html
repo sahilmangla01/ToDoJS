@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div class="mainContainer">
+
+        <header class="head1">
+            <div class="display ">
+                <h1>Task <span>List</span> </h1>
+                <div class="display addBtn"  >
+                    <button class="btn1" onclick="addPopup()">+</button>
+                    <h2 onclick="addPopup()"><span > Add Item</span></h2>
+    
+                </div>
+            </div>
+            <div class="checkItem">No Items in the todo List</div>
+           
+        </header>
+
+        <header class="head2">
+            <div class="display">
+                <div class="display">
+                    <button class="backBtn" onclick="back()">></button>
+                    <h2 onclick="back()"><span>BACK</span></h2>
+                </div>
+                <div class="head2Text"></div>
+                <button class="btn1" onclick="addPopup2()">+</button>
+            </div>
+        </header>
+
+
+        <section>
+            <div class="addTask display">
+                <div class="adt"> ADD NEW TASK</div>
+                <input class="cardText" type="text" placeholder="Add New Task"   >
+                <div >
+                    <button class="btn2 addBtn" onclick="addTask()">Add</button>
+                    <button class="btn2 closeBtn" onclick="closeTask()">Close</button>
+    
+                </div>
+            </div>
+        </section>
+
+        <div class="todos" id="todos" ></div>
+
+        <section>
+            <div class="addTask display addItem">
+                <div class="adt"> ADD NEW ITEM</div>
+                <input class="cardItem" type="text" placeholder="Add New Item"  >
+                <div >
+                    <button class="btn2 addBtn2"   >Add</button>
+                    <button class="btn2 closeBtn2"  >Close</button>
+    
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
