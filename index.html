@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./main.js"></script>
+    <script src="./index.js" defer></script>
 </head>
 <body>
     <div class="mainContainer">
@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="checkItem">No Items in the todo List</div>
-           
+            <div class="todos" id="todos" ></div>
         </header>
 
         <header class="head2">
@@ -30,8 +30,9 @@
                     <h2 onclick="back()"><span>BACK</span></h2>
                 </div>
                 <div class="head2Text"></div>
-                <button class="btn1" onclick="addPopup2()">+</button>
+                <button class="btn1" onclick="addPopup()">+</button>
             </div>
+            <div class="todo2"></div>
         </header>
 
 
@@ -47,15 +48,15 @@
             </div>
         </section>
 
-        <div class="todos" id="todos" ></div>
+        
 
-        <section>
-            <div class="addTask display addItem">
+        <section >
+            <div class=" display addItem">
                 <div class="adt"> ADD NEW ITEM</div>
                 <input class="cardItem" type="text" placeholder="Add New Item"  >
                 <div >
-                    <button class="btn2 addBtn2"   >Add</button>
-                    <button class="btn2 closeBtn2"  >Close</button>
+                    <button id="addBtn2" class="btn2 addBtn2" onclick="addItem()"  >Add</button>
+                    <button class="btn2 closeBtn2" onclick="closeItem()" >Close</button>
     
                 </div>
             </div>

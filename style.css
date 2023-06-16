@@ -91,6 +91,22 @@ input{
     left: 40vw;
     z-index: 1;
 }
+.addItem{
+    display: none;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid orangered;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    text-align: center;
+    position: fixed;
+    top: 30vh;
+    left: 40vw;
+    z-index: 1;
+}
 .btn2{
     width: 100px;
     height: 40px;
@@ -113,7 +129,14 @@ input{
     flex-wrap: wrap;
     justify-content: space-between;
     left: 280px;
+    top:60px;
    background-color: black;
+}
+.todo2{
+    width: 400px;
+    position: relative;
+    left: 640px;
+    top:150px;
 }
 .todoscard{
     width: 220px;
