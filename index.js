@@ -149,11 +149,13 @@ function addItem(){
 
         itemButton.addEventListener("click", ()=>{
                         itemText.style.textDecoration ="line-through"
+                        itemText.style.color ="orange"
                         itemButton.style.display = "none";
                         itemText.style.marginLeft = "55px"
             
                         itemText.addEventListener("click",()=>{
                             itemText.style.textDecoration ="none"
+                            itemText.style.color ="black"
                             itemButton.style.display = "block";
                             itemText.style.marginLeft = "0px"
                         })

@@ -169,7 +169,8 @@ input{
     border-bottom: 2px solid grey;
     padding-bottom: 20px;
     margin: 20px 0px;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
 }
 .addCardBtn2{
     height: 35px;
@@ -200,16 +201,18 @@ input{
 }
 .itemDiv{
     display: flex;
+    
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
    margin-left: 20px;
    margin-bottom: 10px;
     
 }
 .itemText{
     color: black;
-    font-size: 20px;
-    width: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 70px;
     margin-right: 2px;
     margin-top: 4px;
     text-align: left;
@@ -222,5 +225,5 @@ input{
     border-radius: 20px;
     width: 80px;
     height: 30px;
-   margin-right: 20px;
+   margin-left: 20px;
 }
