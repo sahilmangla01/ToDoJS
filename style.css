@@ -122,7 +122,7 @@ input{
     filter: blur(20px);
 }
 .todos{
-    width: 400px;
+    width: 950px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
