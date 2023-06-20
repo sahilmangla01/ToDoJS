@@ -131,7 +131,7 @@ function addItem(){
     
 
     let itemDiv =document.createElement('div')
-    let itemText =document.createElement('div')
+    let itemText =document.createElement('p')
     let itemButton =document.createElement('button')
 
     console.log(childMainDiv);
@@ -144,7 +144,7 @@ function addItem(){
     itemButton.classList.add("itemButton")
 
     let itemInput = document.querySelector(".cardItem").value;
-    itemText.innerHTML = `${itemInput}`;
+    itemText.innerHTML = itemInput;
         itemButton.innerHTML = "Done"
 
         itemButton.addEventListener("click", ()=>{

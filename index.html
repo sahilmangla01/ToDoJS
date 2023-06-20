@@ -8,14 +8,15 @@
     <script src="./index.js" defer></script>
 </head>
 <body>
+    
     <div class="mainContainer">
 
         <header class="head1">
-            <div class="display ">
+            <div class="display head1display ">
                 <h1>Task <span>List</span> </h1>
                 <div class="display addBtn"  >
-                    <button class="btn1" onclick="addPopup()">+</button>
-                    <h2 onclick="addPopup()"><span > Add Item</span></h2>
+                    <button class="btn1" onclick="addPopup()"> +</button>
+                    <h2 onclick="addPopup()"><span class="backText"> Add Item</span></h2>
     
                 </div>
             </div>
@@ -24,7 +25,7 @@
         </header>
 
         <header class="head2">
-            <div class="display">
+            <div class="display header2">
                 <div class="display">
                     <button class="backBtn" onclick="back()">></button>
                     <h2 onclick="back()"><span class="backText">BACK</span></h2>
@@ -40,9 +41,9 @@
             <div class="addTask display">
                 <div class="adt"> ADD NEW TASK</div>
                 <input class="cardText" type="text" placeholder="Add New Task"   >
-                <div >
-                    <button class="btn2 addBtn" onclick="addTask()">Add</button>
-                    <button class="btn2 closeBtn" onclick="closeTask()">Close</button>
+                <div class="buttons">
+                    <button class="btn2 addBtn1" onclick="addTask()">Add</button>
+                    <button class="btn2 closeBtn1" onclick="closeTask()">Close</button>
     
                 </div>
             </div>
@@ -54,7 +55,7 @@
             <div class=" display addItem">
                 <div class="adt"> ADD NEW ITEM</div>
                 <input class="cardItem" type="text" placeholder="Add New Item"  >
-                <div >
+                <div class="display">
                     <button id="addBtn2" class="btn2 addBtn2" onclick="addItem()"  >Add</button>
                     <button class="btn2 closeBtn2" onclick="closeItem()" >Close</button>
     
