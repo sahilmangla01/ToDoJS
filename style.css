@@ -227,3 +227,47 @@ input{
     height: 30px;
    margin-left: 20px;
 }
+
+@media only screen and (max-width: 500px) and (min-Width : 350px){
+    .todos{
+        display: block;
+        width: 450px;
+        left: 20px;
+    }
+    .todo2{
+        display: block;
+        width: 450px;
+        left: 20px;
+    }
+    .checkItem{
+        font-size: 15px;
+        font-weight: bolder;
+        position: relative;
+        left: 30px;
+        margin-top: 40px;
+    }
+    .addTask{
+        position: absolute;
+        width: 300px;
+        left:20px;
+        top: 300px;
+    }
+    .cardText{
+        width: 200px;
+
+    }
+    .addItem{
+        position: static;
+        width: 300px;
+        margin-left: 20px;
+        top:300px
+    }
+    .cardItem{
+        width: 200px;
+
+    }
+    .backText{
+        display: none;
+    }
+
+}
