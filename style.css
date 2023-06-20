@@ -315,13 +315,17 @@ input{
     .btn1{
         width: 40px;
         height: 40px;
-      
+        margin-right: 30px;
         
     }
     .backBtn{
         width: 40px;
         height: 40px;
         
+    }
+    .head2Text{
+        position: relative;
+        left: -10px;
     }
 
 }
