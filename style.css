@@ -51,6 +51,7 @@ header{
 }
 
 .checkItem{
+    width: 290px;
     font-size: 25px;
     font-weight: bolder;
     position: relative;
@@ -121,7 +122,7 @@ input{
     filter: blur(20px);
 }
 .todos{
-    width: 1000px;
+    width: 400px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -131,7 +132,7 @@ input{
    background-color: black;
 }
 .todo2{
-    width: 1000px;
+    width: 300px;
     position: relative;
     left: 640px;
     top:150px;
@@ -253,9 +254,9 @@ input{
         margin: 20px 0;
     }
     .todo2{
-        
+        display: inline-block;
         width: 280px;
-       left:70px;
+       left:10px;
         top: 100px;
     }
     .addBtn{
@@ -306,17 +307,20 @@ input{
     }
     .header2{
         width: 398px;
-        
+        position: relative;
+    left: -20px;
     }
+        
+    
     .btn1{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
       
         
     }
     .backBtn{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         
     }
 

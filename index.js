@@ -82,6 +82,7 @@ function createCard( id ,cardTittle , count){
         head2.style.display = "block"
         head2Text.innerHTML = `${cardTittle}`
         todoCardId = todoDiv.getAttribute("id");
+        console.log(todoCardId)
         headChild = document.getElementById(`${todoCardId}`)
         console.log(headChild)
         todo2.appendChild(headChild);
@@ -166,5 +167,7 @@ function back(){
     
     head1.style.display ="block"
     head2.style.display = "none"
+    
+    
     todo.appendChild(headChild)
 }
