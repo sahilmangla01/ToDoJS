@@ -11,30 +11,25 @@
     
     <div class="mainContainer">
 
-        <header class="head1">
+        <header class="head1" >
             <div class="display head1display ">
-                <h1>Task <span>List</span> </h1>
+                <h1 class="head2">Task <span>List</span> </h1>
+                <div class=" back">
+                    <button class="backBtn" onclick="back()">></button>
+                    <h2 onclick="back()"><span class="backText">BACK</span></h2>
+                </div>
+                <div class="head2Text"></div>
                 <div class="display addBtn"  >
                     <button class="btn1" onclick="addPopup()"> +</button>
                     <h2 onclick="addPopup()"><span class="backText"> Add Item</span></h2>
     
                 </div>
+                
             </div>
             <div class="checkItem">No Items in the todo List</div>
             <div class="todos" id="todos" ></div>
         </header>
 
-        <header class="head2">
-            <div class="display header2">
-                <div class="display">
-                    <button class="backBtn" onclick="back()">></button>
-                    <h2 onclick="back()"><span class="backText">BACK</span></h2>
-                </div>
-                <div class="head2Text"></div>
-                <button class="btn1" onclick="addPopup()">+</button>
-            </div>
-            <div class="todo2"></div>
-        </header>
 
 
         <section>

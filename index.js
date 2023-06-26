@@ -1,5 +1,4 @@
-idCount =0;
-count = 0;
+let idCount =0;
 let todoCardId = 0;
 let child;
 let headChild;
@@ -9,44 +8,41 @@ let popup = document.querySelector(".addTask");
 let popup2 = document.querySelector(".addItem");
 let head2 = document.querySelector(".head2")
 let head2Text = document.querySelector(".head2Text")
+let  back12 = document.querySelector(".back")
 let todo = document.querySelector('.todos')
-let todo2 = document.querySelector('.todo2')
-
-
-
-
+let todo2 = document.querySelector('#todo2')
+let todos2 = document.getElementsByClassName('todo2')
+let cards;
 
 function addPopup(){
     head1.style.filter = "blur(20px)";
-    head2.style.filter = "blur(20px)";
-    
     popup.style.display ="block"
 }
 
 function closeTask(){
     popup.style.display ="none"
     head1.style.filter = "blur(0px)";
-    head2.style.filter = "blur(0px)";
+    
 }
 
 function addTask(){
     idCount++;
-    count++;
-   
+
     let cardTittle = document.querySelector(".cardText").value;
-    if(count>0){
+    if(idCount>0){
         let checkItems = document.querySelector(".checkItem");
         checkItems.style.display = "none"
     }
    
     if(cardTittle){
         
-        createCard(idCount, cardTittle, count);
+        createCard(idCount, cardTittle, idCount);
     }else{
         alert("Please Give Name to the Todo card")
     }
     closeTask();
-    back();
+  
+    back()  
 
 }
 
@@ -64,7 +60,6 @@ function createCard( id ,cardTittle , count){
     todoDiv.append(button1)
     todoDiv.append(button2)
     todoDiv.appendChild(mainDiv)
-
    
     heading.innerHTML = `${cardTittle}`
     button1.innerHTML = "x"
@@ -75,46 +70,49 @@ function createCard( id ,cardTittle , count){
     button2.classList.add('addCardBtn2')
     heading.classList.add('line') 
 
+    heading.addEventListener("click",()=>{ 
+        head2.style.display ="none"
+        back12.style.display = "flex"
+        head2Text.style.display ="block"
 
-    heading.addEventListener("click",()=>{
-        
-        head1.style.display ="none"
-        head2.style.display = "block"
         head2Text.innerHTML = `${cardTittle}`
         todoCardId = todoDiv.getAttribute("id");
-        console.log(todoCardId)
+        // // console.log(todoCardId)
         headChild = document.getElementById(`${todoCardId}`)
-        console.log(headChild)
-        todo2.appendChild(headChild);
-        
+        // // console.log(headChild)
+
+        cards = document.querySelectorAll(".todoscard")
+        console.log(cards)
+        for(let i =0; i<cards.length; i++){
+            cards[i].style.display = "none"
+        }
+        headChild.style.display = "block"
+       todo.style.justifyContent = "center"        
     })
 
     button1.addEventListener("click",()=>{
-        count--;
         todoDiv.remove()
+        count--;
+        // console.log(todoDiv)
         if(count === 0){
             let checkItems = document.querySelector(".checkItem");
             checkItems.style.display = "block" 
         }
-        
-
 })
 
 button2.addEventListener("click",()=>{
     head1.style.filter = "blur(20px)";
-    head2.style.filter = "blur(20px)";
     popup2.style.display ="block"
 
     todoCardId = todoDiv.getAttribute("id");
       child = document.getElementById(`${todoCardId}`).children;
         childMainDiv = child[3];
 })
-
 }
 
 function closeItem(){
     head1.style.filter = "blur(0px)";
-    head2.style.filter = "blur(0px)";
+    // head2.style.filter = "blur(0px)";
     popup2.style.display ="none"
 }
 
@@ -122,15 +120,7 @@ function addItem(){
     
     popup2.style.display="none"
     head1.style.filter = "blur(0px)"
-    head2.style.filter = "blur(0px)"
-    
-    
-   
-    //  child = document.getElementById(`${todoCardId}`).children;
-    
-    // let divToAdd = document.getElementById(`${mainDivId}`)
-    
-
+ 
     let itemDiv =document.createElement('div')
     let itemText =document.createElement('p')
     let itemButton =document.createElement('button')
@@ -164,10 +154,14 @@ function addItem(){
 }
 
 function back(){
-    
-    head1.style.display ="block"
-    head2.style.display = "none"
-    
-    
-    todo.appendChild(headChild)
+    head2.style.display ="block"
+    back12.style.display = "none"
+    head2Text.style.display ="none"
+    for(let i =0; i<cards.length; i++){
+        cards[i].style.display = "block"
+    }
+    todo.style.justifyContent = "space-between"
+
+     
+  
 }

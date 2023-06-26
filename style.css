@@ -8,21 +8,22 @@ body{
     
 
 }
+
 h1{
     font-size: 50px;
     
 }
 header{
-    padding: 40px;    
+    padding: 20px;    
 }
 .head2Text{
     font-size: 40px;
+    display: none;
+    position: relative;
+    left: 35px;
 
 }
-.head2{
-    display: none;
-    
-}
+
 .display{
     display: flex;
     justify-content: space-around;
@@ -63,6 +64,9 @@ header{
     font-size: x-large;
     padding-bottom: 10px;
     font-weight: bolder;
+}
+.back{
+    display: none;
 }
 input{
     width: 300px;
@@ -131,12 +135,7 @@ input{
     top:60px;
    background-color: black;
 }
-.todo2{
-    width: 300px;
-    position: relative;
-    left: 640px;
-    top:150px;
-}
+
 .todoscard{
     width: 220px;
     height: 350px;
@@ -199,6 +198,10 @@ input{
     
     
 }
+.mainDiv::-webkit-scrollbar{
+    
+    margin-top: 20px;
+}
 .itemDiv{
     display: flex;
     width: 200px;
@@ -239,31 +242,28 @@ input{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-@media only screen and (max-width: 450px) and (min-Width : 350px){
+@media only screen and (max-width: 500px) and (min-Width : 350px){
    .mainContainer{
     text-align: center;
    
    }
     .todos{
         display: block;
-        width: 90%;
-        left: 50px;
-        top: 30px;
+        width: 85%;
+        left: 55px;
+        margin-top: 20px;
+        
     }
     h1{
         margin: 20px 0;
     }
-    .todo2{
-        display: inline-block;
-        width: 280px;
-       left:10px;
-        top: 100px;
-    }
+
     .addBtn{
-        padding: 10px;
-        
+       
+        width: 60px;
         position: relative;
-        left: 55px;
+        left: 25px;
+        top: 20px;
     }
     .checkItem{
         font-size: 20px;
@@ -298,18 +298,14 @@ input{
         display: none;
     }
     .head1display{
-        display: block;
+        display: flex;
     }
     .head2{
-        
-        width: 398px;
+        display: flex;
+        width: 310px;
         padding: 20px 20px 0px;
     }
-    .header2{
-        width: 398px;
-        position: relative;
-    left: -20px;
-    }
+    
         
     
     .btn1{
@@ -318,14 +314,16 @@ input{
         margin-right: 30px;
         
     }
-    .backBtn{
+    .back{
         width: 40px;
         height: 40px;
+        margin-top: 20px;
         
     }
     .head2Text{
         position: relative;
-        left: -10px;
+        left: 10px;
+        top: 30px;
     }
 
 }
